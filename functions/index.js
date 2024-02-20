@@ -5,7 +5,7 @@ var axios = require('axios');
 admin.initializeApp();
 
 exports.onUserCreated = functions.auth.user().onCreate(function (user) {
-    var url = 'https://suzi-backend.onrender.com/login';
+    var url = 'https://suzi-backend-kunqmukjgq-uw.a.run.app/';
     var data = {
         email: user.email,
         firebaseID: user.uid,
